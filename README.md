@@ -3,7 +3,7 @@
 
 ## 安装
 ```
-npm install -g yarn fyarn --registry "https://r.cnpmjs.org/"
+npm install -g fyarn --registry "https://r.cnpmjs.org/"
 ```
 
 ## 使用
