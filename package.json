@@ -1,7 +1,7 @@
 {
   "name": "fyarn",
   "installationMethod": "unknown",
-  "version": "1.23.3",
+  "version": "1.23.4",
   "license": "BSD-2-Clause",
   "preferGlobal": true,
   "description": "📦 Fast Yarn",
@@ -109,7 +109,7 @@
   "engines": {
     "node": ">=4.0.0"
   },
-  "repository": "yarnpkg/yarn",
+  "repository": "xcodebuild/fyarn",
   "bin": {
     "fyarn": "./bin/yarn.js",
     "fastyarn": "./bin/yarn.js"
