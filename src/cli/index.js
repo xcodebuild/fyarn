@@ -25,6 +25,22 @@ import {version} from '../util/yarn-version.js';
 import handleSignals from '../util/signal-handler.js';
 import {boolify, boolifyWithDefault} from '../util/conversion.js';
 import {ProcessTermError} from '../errors';
+import { green } from 'ansi-colors';
+
+function injectEnv() {
+  const {
+      china: {ENVS}
+  } = require('binary-mirror-config');
+
+  Object.entries(ENVS).forEach(([key, value]) => {
+      process.env[key] = value;
+  });
+}
+
+injectEnv();
+
+console.log(green('[📦 Fast Yarn] https://github.com/xcodebuild/fyarn'));
+
 
 process.stdout.prependListener('error', err => {
   // swallow err only if downstream consumer process closed pipe early
