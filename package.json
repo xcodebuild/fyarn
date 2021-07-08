@@ -1,7 +1,7 @@
 {
   "name": "fyarn",
   "installationMethod": "unknown",
-  "version": "1.23.1",
+  "version": "1.23.2",
   "license": "BSD-2-Clause",
   "preferGlobal": true,
   "description": "📦 Fast Yarn",
@@ -114,6 +114,11 @@
     "fyarn": "./bin/yarn.js",
     "fastyarn": "./bin/yarn.js"
   },
+  "files": [
+    "bin",
+    "lib",
+    "package.json"
+  ],
   "scripts": {
     "build": "gulp build",
     "build-bundle": "node ./scripts/build-webpack.js",
@@ -132,7 +137,8 @@
     "test-only-debug": "node --inspect-brk --max_old_space_size=4096 node_modules/jest/bin/jest.js --runInBand --verbose",
     "test-coverage": "node --max_old_space_size=4096 node_modules/jest/bin/jest.js --coverage --verbose",
     "watch": "gulp watch",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "rename-fastyarn": "node ./scripts/rename-fastyarn.js"
   },
   "jest": {
     "collectCoverageFrom": [
