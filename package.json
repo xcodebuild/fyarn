@@ -111,8 +111,8 @@
   },
   "repository": "yarnpkg/yarn",
   "bin": {
-    "yarn": "./bin/yarn.js",
-    "yarnpkg": "./bin/yarn.js"
+    "fyarn": "./bin/yarn.js",
+    "fastyarn": "./bin/yarn.js"
   },
   "scripts": {
     "build": "gulp build",
